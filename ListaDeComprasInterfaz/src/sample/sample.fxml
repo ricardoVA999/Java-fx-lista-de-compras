@@ -38,8 +38,8 @@
           <TableColumn prefWidth="75.0" text="Nombre" />
         </columns>
       </TableView>
-      <Button mnemonicParsing="false" text="Editar" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+      <Button mnemonicParsing="false" onAction="#OpenListaDelSuper" text="Editar" GridPane.columnIndex="3" GridPane.rowIndex="9" />
       <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Eliminar" translateX="190.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-      <Button mnemonicParsing="false" onAction="#Openwindow" text="Nueva Lista" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <Button mnemonicParsing="false" onAction="#OpenNuevaLista" text="Nueva Lista" GridPane.columnIndex="3" GridPane.rowIndex="2" />
    </children>
 </GridPane>
