@@ -48,7 +48,7 @@ public class Controller {
             stage.setScene(new Scene(root));
             stage.show();
         } catch (Exception e){
-            System.out.println("Cant load new window");
+            System.out.println("Nel");
         }
     }
     //Funcion para abrir la ventana Lista del super
@@ -64,7 +64,7 @@ public class Controller {
             stage.setScene(new Scene(root));
             stage.show();
         } catch (Exception e){
-            System.out.println("Cant load new window");
+            System.out.println("Nel");
         }
     }
 }

@@ -1,10 +1,10 @@
 package sample.Clases;
 
+import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.ObservableList;
-
-import java.util.Date;
 //Definir la clase Lista de Items
 public class ListaDeItems {
     ObservableList<Item> MiLista;
-    Date fecha;
+    SimpleStringProperty nombre;
+    SimpleStringProperty descripcion;
 }

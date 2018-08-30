@@ -41,7 +41,7 @@ public class NuevoArticuloController {
             stage.setScene(new Scene(root));
             stage.show();
         } catch (Exception e){
-            System.out.println("Cant load new window");
+            System.out.println("Nel");
         }
     }
     //Abrir Lista Del Super creando un iteam
@@ -61,7 +61,7 @@ public class NuevoArticuloController {
             double precio = Double.parseDouble(Precio.getText());
             Item miitem = new Item(nombre, cantidad, precio);
         } catch (Exception e){
-            System.out.println("Cant load new window");
+            System.out.println("Nel");
         }
     }
 }

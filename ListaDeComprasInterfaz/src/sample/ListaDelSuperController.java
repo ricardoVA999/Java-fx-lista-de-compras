@@ -51,7 +51,7 @@ public class ListaDelSuperController {
             stage.setScene(new Scene(root));
             stage.show();
         } catch (Exception e){
-            System.out.println("Cant load new window");
+            System.out.println("Nel");
         }
     }
     //Abrir la ventana Sample
@@ -67,7 +67,7 @@ public class ListaDelSuperController {
             stage.setScene(new Scene(root));
             stage.show();
         } catch (Exception e){
-            System.out.println("Cant load new window");
+            System.out.println("Nel");
         }
     }
 }
