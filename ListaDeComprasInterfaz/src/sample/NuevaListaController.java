@@ -5,19 +5,23 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-import java.awt.*;
 
 public class NuevaListaController {
+    //Derle identidad a las diferentes partes del fxml
     @FXML
-    private Label label;
+    private Button button1;
 
     @FXML
-    private Button button;
+    private Button button2;
 
     @FXML
+    //Abrir Lista Del Super
     public void OpenListaDelSuper(ActionEvent event){
+        Stage stage1 = (Stage) button2.getScene().getWindow();
+        stage1.close();
         Parent root;
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ListaDelSuper.fxml"));
@@ -30,7 +34,10 @@ public class NuevaListaController {
             System.out.println("Cant load new window");
         }
     }
+    //Abrir Sample
     public void Opensample(ActionEvent event){
+        Stage stage1 = (Stage) button1.getScene().getWindow();
+        stage1.close();
         Parent root;
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sample.fxml"));

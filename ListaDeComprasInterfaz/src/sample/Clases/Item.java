@@ -5,11 +5,14 @@ import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
+//Crear la clase Item
 public class Item {
     SimpleStringProperty nombre;
     SimpleIntegerProperty cantidad;
     SimpleDoubleProperty precio;
     SimpleBooleanProperty estado;
+
+    //LLamar a las instancias de un objeto
     public Item(String nombre, int cantidad, double precio){
         this.nombre = new SimpleStringProperty();
         this.cantidad = new SimpleIntegerProperty();
@@ -21,6 +24,8 @@ public class Item {
         this.precio.set(precio);
         this.estado.set(false);
     }
+
+    //Metodos Importantes de la clase, setters y getters
     public String getNombre() {
         return this.nombre.get();
     }

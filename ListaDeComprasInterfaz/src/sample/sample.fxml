@@ -7,6 +7,7 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
 <GridPane alignment="center" hgap="10" prefHeight="400.0" prefWidth="500.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <columnConstraints>
@@ -29,17 +30,19 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <Label prefHeight="33.0" prefWidth="92.0" text="Mis Listas:" translateX="25.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-      <TableView prefHeight="246.0" prefWidth="324.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+      <Label prefHeight="33.0" prefWidth="92.0" text="Mis Listas:" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font></Label>
+      <TableView fx:id="myListTableView" prefHeight="246.0" prefWidth="324.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
         <columns>
-            <TableColumn prefWidth="75.0" text="Estimado" />
-          <TableColumn prefWidth="75.0" text="Fecha" />
-            <TableColumn prefWidth="75.0" text="Pendientes" />
-          <TableColumn prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="estimadoColumn" prefWidth="75.0" text="Estimado" />
+          <TableColumn fx:id="fechaColumn" prefWidth="75.0" text="Fecha" />
+            <TableColumn fx:id="pendienteColumn" prefWidth="75.0" text="Pendientes" />
+          <TableColumn fx:id="nombreColumn" prefWidth="75.0" text="Nombre" />
         </columns>
       </TableView>
-      <Button mnemonicParsing="false" onAction="#OpenListaDelSuper" text="Editar" GridPane.columnIndex="3" GridPane.rowIndex="9" />
-      <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Eliminar" translateX="190.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-      <Button mnemonicParsing="false" onAction="#OpenNuevaLista" text="Nueva Lista" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <Button fx:id="button2" mnemonicParsing="false" onAction="#OpenListaDelSuper" text="Editar" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+      <Button fx:id="button1" mnemonicParsing="false" onAction="#OpenNuevaLista" text="Nueva Lista" GridPane.columnIndex="3" GridPane.rowIndex="2" />
    </children>
 </GridPane>
